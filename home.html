@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231029182730" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- <div id="popup" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close">Закрити</button>
+      <div class="popup__text">Text</div>
+    </div>
+  </div>
+</div> -->
+		<div id="order-popup" aria-hidden="true" class="order-popup popup">
+			<div class="order-popup__wrapper popup__wrapper">
+				<div class="order-popup__content popup__content">
+					<button data-close type="button" class="popup__close"></button>
+					<div class="order-popup__body">
+						<h2 class="order-popup__title title">
+							Оставьте заявку <span>мы с вами свяжемся</span>
+						</h2>
+						<form action="files/sendmail/sendmail.php" method="POST" class="order-popup__form">
+							<input type="text" name="form[name]" data-error="Error" placeholder="Ваше имя" class="order-popup__input input" />
+							<input type="tel" name="form[tel]" data-error="Error" placeholder="+7 (___) ___ __ __" class="order-popup__input input" />
+							<input type="email" name="form[email]" data-error="Error" placeholder="Ваш e-mail" class="order-popup__input input" />
+							<button type="submit" class="order-popup__btn button">
+								Отправить
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__container">
+				<div class="header__content">
+					<div class="header__left left-header">
+						<div class="left-header__img">
+							<a href="#" class="header__logo"><img src="img/logo.svg" alt="logo" /></a>
+						</div>
+					</div>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#" class="menu__link _active">Главная</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Услуги</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Сопровождение</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Полезное</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">О компании</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__right right-header">
+						<a href="tel:79998900998" class="right-header__phone">+7 (999) 890 09 98</a>
+						<button type="button" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="main">
+				<div class="main__img-ibg" data-prlx-parent>
+					<picture><source srcset="img/main/bg.webp" type="image/webp"><img src="img/main/bg.png" alt="bg" data-prlx /></picture>
+				</div>
+
+				<div class="main__dark"></div>
+				<div class="main__container">
+					<div class="main__content">
+						<div class="main__body body-main">
+							<div class="body-main__left left-main">
+								<h1 class="left-main__title">Решим любой правовой вопрос</h1>
+								<p class="left-main__desc">
+									Помощь в решении любого правового вопроса в вашу пользу
+								</p>
+								<div class="left-main__form form-left-main">
+									<p class="form-left-main__title">Нужна консультация?</p>
+									<form class="form-left-main__form" action="files/sendmail/sendmail.php" method="POST">
+										<input type="tel" name="form[phone]" data-error="Error" placeholder="+7 (___) ___ __ __" class="form-left-main__input input tel-input" />
+										<a type="submit" class="form-left-main__btn button button_w" data-popup="#order-popup">
+											Заказать звонок
+										</a>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="right-body-main__img">
+							<picture><source srcset="img/main/01.webp" type="image/webp"><img src="img/main/01.png" alt="img" /></picture>
+						</div>
+						<div class="main__bottom bottom-main">
+							<div class="bottom-main__bg"></div>
+							<div class="bottom-main__items">
+								<div class="bottom-main__item item-bottom-main">
+									<p class="item-bottom-main__title">89%</p>
+									<p class="item-bottom-main__desc">Выигранных дел</p>
+								</div>
+								<div class="bottom-main__item item-bottom-main">
+									<p class="item-bottom-main__title">34</p>
+									<p class="item-bottom-main__desc">Сотрудника в штате</p>
+								</div>
+								<div class="bottom-main__item item-bottom-main">
+									<p class="item-bottom-main__title">18</p>
+									<p class="item-bottom-main__desc">Лет на рынке</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="do-care">
+				<div class="do-care__bg-ibg" data-prlx-parent>
+					<picture><source srcset="img/do-care/bg.webp" type="image/webp"><img src="img/do-care/bg.png" alt="bg" data-prlx /></picture>
+				</div>
+				<div class="do-care__container">
+					<div class="do-care__img">
+						<picture><source srcset="img/do-care/01.webp" type="image/webp"><img src="img/do-care/01.png" alt="man" /></picture>
+					</div>
+					<div class="do-care__content">
+						<div class="do-care__quote quote-do-care">
+							<div class="quote-do-care__painting">
+								<picture><source srcset="img/do-care/painting.webp" type="image/webp"><img src="img/do-care/painting.png" alt="painting" /></picture>
+							</div>
+							<h3 class="quote-do-care__subtitle subtitle subtitle_dash">
+								Слово руководителя
+							</h3>
+							<div class="quote-do-care__body">
+								<span class="quote-do-care__quote quote quote_top _icon-quote"></span>
+								<span class="quote-do-care__quote quote quote_bottom _icon-quote"></span>
+								<h2 class="quote-do-care__title title">
+									Потому что нам <span>не все равно</span>
+								</h2>
+								<p class="quote-do-care__desc">
+									Я обеспечу представление Ваших интересов в судах общей
+									юрисдикции, арбитраже, третейском суде, приму участие в
+									переговорах, окажу помощь на стадии досудебного
+									урегулирования споров.
+								</p>
+							</div>
+
+							<div class="quote-do-care__author author-quote-do-care">
+								<h4 class="author-quote-do-care__title">
+									Жемчужин Василий Яковлевич
+								</h4>
+								<p class="author-quote-do-care__desc">Генеральный директор</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="why-us">
+				<div class="why-us__bg-ibg" data-prlx-parent>
+					<picture><source srcset="img/why-us/bg.webp" type="image/webp"><img src="img/why-us/bg.png" alt="bg" data-prlx /></picture>
+				</div>
+				<div class="why-us__container">
+					<div class="why-us__content">
+						<div class="why-us__top top-why-us">
+							<h3 class="top-why-us__subtitle subtitle">Наши преимущества</h3>
+							<h2 class="top-why-us__title title">
+								Почему <span>выбирают</span> нас
+							</h2>
+						</div>
+						<div class="why-us__cards">
+							<div class="why-us__card card-why-us">
+								<div class="card-why-us__body">
+									<div class="card-why-us__img">
+										<img src="img/why-us/01.svg" alt="clock" />
+									</div>
+									<h4 class="card-why-us__title">круглосуточная поддержка</h4>
+									<p class="card-why-us__desc">
+										Звонки по любым вопросам в удобное для вас время. Мы
+										всегда рядом
+									</p>
+								</div>
+							</div>
+							<div class="why-us__card card-why-us">
+								<div class="card-why-us__body">
+									<div class="card-why-us__img">
+										<img src="img/why-us/02.svg" alt="briefcase" />
+									</div>
+									<h4 class="card-why-us__title">Высокая экспертность</h4>
+									<p class="card-why-us__desc">
+										Наши специалисты постоянно улучшают свои навыки и изучают
+										новые подходы
+									</p>
+								</div>
+							</div>
+							<div class="why-us__card card-why-us">
+								<div class="card-why-us__body">
+									<div class="card-why-us__img">
+										<img src="img/why-us/03.svg" alt="horse" />
+									</div>
+									<h4 class="card-why-us__title">
+										думаем на два шага вперед
+									</h4>
+									<p class="card-why-us__desc">
+										Звонки по любым вопросам в удобное для вас время. Мы
+										всегда рядом
+									</p>
+								</div>
+							</div>
+							<div class="why-us__card card-why-us">
+								<div class="card-why-us__body">
+									<div class="card-why-us__img">
+										<img src="img/why-us/04.svg" alt="book" />
+									</div>
+									<h4 class="card-why-us__title">Знания – наша сила</h4>
+									<p class="card-why-us__desc">
+										Звонки по любым вопросам в удобное для вас время. Мы
+										всегда рядом
+									</p>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="why-us__btn button" data-popup="#order-popup">Заказать звонок</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="our-specialists">
+				<div class="our-specialists__container">
+					<div class="our-specialists__content">
+						<div class="our-specialists__left left-our-specialists">
+							<h2 class="left-our-specialists__subtitle subtitle subtitle_dash">
+								Наша команда
+							</h2>
+							<h3 class="left-our-specialists__title title">
+								Наши специалисты знают <span>свое дело</span>
+							</h3>
+							<p class="left-our-specialists__desc">
+								Я обеспечу представление Ваших интересов в судах общей
+								юрисдикции, арбитраже, третейском суде, приму участие в
+								переговорах.
+							</p>
+							<a href="#" class="left-our-specialists__btn button">Заказать звонок</a>
+						</div>
+						<div class="our-specialists__slider swiper">
+							<div class="our-specialists__wrapper swiper-wrapper">
+								<div class="our-specialists__slide slide-our-specialists swiper-slide">
+									<div class="slide-our-specialists__body">
+										<div class="slide-our-specialists__img-ibg">
+											<picture><source srcset="img/our-specialists/01.webp" type="image/webp"><img src="img/our-specialists/01.png" alt="photo of specialist" /></picture>
+										</div>
+										<div class="slide-our-specialists__info info-slide-specialist">
+											<h4 class="info-slide-specialist__name">
+												КИРИЛЛ АЛЕКСАНДРОВич
+											</h4>
+											<p class="info-slide-specialist__exp">27 лет стажа</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="our-specialists__slide slide-our-specialists swiper-slide">
+									<div class="slide-our-specialists__body slide-our-specialists_reverse">
+										<div class="slide-our-specialists__img-ibg">
+											<picture><source srcset="img/our-specialists/02.webp" type="image/webp"><img src="img/our-specialists/02.png" alt="photo of specialist" /></picture>
+										</div>
+										<div class="slide-our-specialists__info info-slide-specialist">
+											<h4 class="info-slide-specialist__name">
+												Любовь Юрьевна
+											</h4>
+											<p class="info-slide-specialist__exp">18 лет стажа</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="our-specialists__slide slide-our-specialists swiper-slide">
+									<div class="slide-our-specialists__body">
+										<div class="slide-our-specialists__img-ibg">
+											<picture><source srcset="img/our-specialists/03.webp" type="image/webp"><img src="img/our-specialists/03.png" alt="photo of specialist" /></picture>
+										</div>
+										<div class="slide-our-specialists__info info-slide-specialist">
+											<h4 class="info-slide-specialist__name">
+												Иван васильевич
+											</h4>
+											<p class="info-slide-specialist__exp">17 лет стажа</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="our-specialists__slide slide-our-specialists swiper-slide">
+									<div class="slide-our-specialists__body slide-our-specialists_reverse">
+										<div class="slide-our-specialists__img-ibg">
+											<picture><source srcset="img/our-specialists/04.webp" type="image/webp"><img src="img/our-specialists/04.png" alt="photo of specialist" /></picture>
+										</div>
+										<div class="slide-our-specialists__info info-slide-specialist">
+											<h4 class="info-slide-specialist__name">
+												АННА ДМИТРИЕВНА
+											</h4>
+											<p class="info-slide-specialist__exp">12 лет стажа</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="our-specialists__slide slide-our-specialists swiper-slide">
+									<div class="slide-our-specialists__body">
+										<div class="slide-our-specialists__img-ibg">
+											<picture><source srcset="img/our-specialists/01.webp" type="image/webp"><img src="img/our-specialists/01.png" alt="photo of specialist" /></picture>
+										</div>
+										<div class="slide-our-specialists__info info-slide-specialist">
+											<h4 class="info-slide-specialist__name">
+												КИРИЛЛ АЛЕКСАНДРОВич
+											</h4>
+											<p class="info-slide-specialist__exp">27 лет стажа</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="our-specialists__slide slide-our-specialists swiper-slide">
+									<div class="slide-our-specialists__body slide-our-specialists_reverse">
+										<div class="slide-our-specialists__img-ibg">
+											<picture><source srcset="img/our-specialists/02.webp" type="image/webp"><img src="img/our-specialists/02.png" alt="photo of specialist" /></picture>
+										</div>
+										<div class="slide-our-specialists__info info-slide-specialist">
+											<h4 class="info-slide-specialist__name">
+												Любовь Юрьевна
+											</h4>
+											<p class="info-slide-specialist__exp">18 лет стажа</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="our-specialists__slide slide-our-specialists swiper-slide">
+									<div class="slide-our-specialists__body">
+										<div class="slide-our-specialists__img-ibg">
+											<picture><source srcset="img/our-specialists/03.webp" type="image/webp"><img src="img/our-specialists/03.png" alt="photo of specialist" /></picture>
+										</div>
+										<div class="slide-our-specialists__info info-slide-specialist">
+											<h4 class="info-slide-specialist__name">
+												Иван васильевич
+											</h4>
+											<p class="info-slide-specialist__exp">17 лет стажа</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="our-specialists__slide slide-our-specialists swiper-slide">
+									<div class="slide-our-specialists__body slide-our-specialists_reverse">
+										<div class="slide-our-specialists__img-ibg">
+											<picture><source srcset="img/our-specialists/04.webp" type="image/webp"><img src="img/our-specialists/04.png" alt="photo of specialist" /></picture>
+										</div>
+										<div class="slide-our-specialists__info info-slide-specialist">
+											<h4 class="info-slide-specialist__name">
+												АННА ДМИТРИЕВНА
+											</h4>
+											<p class="info-slide-specialist__exp">12 лет стажа</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="choose-us">
+				<div class="choose-us__bg-ibg" data-prlx-parent>
+					<picture><source srcset="img/choose-us/bg.webp" type="image/webp"><img src="img/choose-us/bg.jpg" alt="bg" data-prlx /></picture>
+				</div>
+				<div class="choose-us__dark"></div>
+				<div class="choose-us__container">
+					<div class="choose-us__content">
+						<div class="choose-us__top top-choose-us">
+							<h3 class="top-choose-us__subtitle subtitle">Нам доверяют</h3>
+							<h2 class="top-choose-us__title title">
+								они <span>выбрали</span> нас
+							</h2>
+						</div>
+						<div class="choose-us__cards">
+							<div class="choose-us__card card-choose-us">
+								<div class="card-choose-us__body">
+									<div class="card-choose-us__img">
+										<picture><source srcset="img/choose-us/01.webp" type="image/webp"><img src="img/choose-us/01.png" alt="company" /></picture>
+									</div>
+									<p class="card-choose-us__name">mini cooper</p>
+								</div>
+							</div>
+							<div class="choose-us__card card-choose-us">
+								<div class="card-choose-us__body">
+									<div class="card-choose-us__img">
+										<picture><source srcset="img/choose-us/02.webp" type="image/webp"><img src="img/choose-us/02.png" alt="company" /></picture>
+									</div>
+									<p class="card-choose-us__name">сбер</p>
+								</div>
+							</div>
+							<div class="choose-us__card card-choose-us">
+								<div class="card-choose-us__body">
+									<div class="card-choose-us__img">
+										<picture><source srcset="img/choose-us/03.webp" type="image/webp"><img src="img/choose-us/03.png" alt="company" /></picture>
+									</div>
+									<p class="card-choose-us__name">сколково</p>
+								</div>
+							</div>
+							<div class="choose-us__card card-choose-us">
+								<div class="card-choose-us__body">
+									<div class="card-choose-us__img">
+										<picture><source srcset="img/choose-us/04.webp" type="image/webp"><img src="img/choose-us/04.png" alt="company" /></picture>
+									</div>
+									<p class="card-choose-us__name">psychology</p>
+								</div>
+							</div>
+							<div class="choose-us__card card-choose-us">
+								<div class="card-choose-us__body">
+									<div class="card-choose-us__img">
+										<picture><source srcset="img/choose-us/05.webp" type="image/webp"><img src="img/choose-us/05.png" alt="company" /></picture>
+									</div>
+									<p class="card-choose-us__name">Valorant</p>
+								</div>
+							</div>
+							<div class="choose-us__card card-choose-us">
+								<div class="card-choose-us__body">
+									<div class="card-choose-us__img">
+										<picture><source srcset="img/choose-us/06.webp" type="image/webp"><img src="img/choose-us/06.png" alt="company" /></picture>
+									</div>
+									<p class="card-choose-us__name">первый канал</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="reviews">
+				<div class="reviews__container">
+					<div class="reviews__content">
+						<div class="reviews__top top-reviews">
+							<h3 class="top-reviews__subtitle subtitle">О нас говорят</h3>
+							<h2 class="top-reviews__title title">
+								<span>Отзывы</span> наших клиентов
+							</h2>
+						</div>
+						<div class="reviews__slider slider-reviews swiper">
+							<div class="reviews__wrapper swiper-wrapper">
+								<div class="reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__wrapper">
+										<div class="slide-reviews__body">
+											<div class="slide-reviews__img">
+												<picture><source srcset="img/reviews/01.webp" type="image/webp"><img src="img/reviews/01.png" alt="photo" /></picture>
+											</div>
+											<div class="slide-reviews__quote_top quote _icon-quote"></div>
+											<div class="slide-reviews__quote_bottom quote _icon-quote"></div>
+											<div class="slide-reviews__content">
+												<p class="slide-reviews__desc" data-swiper-parallax="-150">
+													Я обеспечу представление Ваших интересов в судах
+													общей юрисдикции, арбитраже, третейском суде, приму
+													участие в переговорах, окажу помощь на стадии
+													досудебного урегулирования споров.
+												</p>
+												<div class="slide-reviews__info info-slide-reviews">
+													<p class="info-slide-reviews__name" data-swiper-parallax="-200">
+														Юлия Воробьева
+													</p>
+													<p class="info-slide-reviews__desc" data-swiper-parallax="-250">
+														Директор компании “Воробьева и ко”
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__wrapper">
+										<div class="slide-reviews__body">
+											<div class="slide-reviews__img">
+												<picture><source srcset="img/reviews/01.webp" type="image/webp"><img src="img/reviews/01.png" alt="photo" /></picture>
+											</div>
+											<div class="slide-reviews__quote_top quote _icon-quote"></div>
+											<div class="slide-reviews__quote_bottom quote _icon-quote"></div>
+											<div class="slide-reviews__content">
+												<p class="slide-reviews__desc" data-swiper-parallax="-150">
+													Я обеспечу представление Ваших интересов в судах
+													общей юрисдикции, арбитраже, третейском суде, приму
+													участие в переговорах, окажу помощь на стадии
+													досудебного урегулирования споров.
+												</p>
+												<div class="slide-reviews__info info-slide-reviews">
+													<p class="info-slide-reviews__name" data-swiper-parallax="-200">
+														Юлия Воробьева
+													</p>
+													<p class="info-slide-reviews__desc" data-swiper-parallax="-250">
+														Директор компании “Воробьева и ко”
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__wrapper">
+										<div class="slide-reviews__body">
+											<div class="slide-reviews__img">
+												<picture><source srcset="img/reviews/01.webp" type="image/webp"><img src="img/reviews/01.png" alt="photo" /></picture>
+											</div>
+											<div class="slide-reviews__quote_top quote _icon-quote"></div>
+											<div class="slide-reviews__quote_bottom quote _icon-quote"></div>
+											<div class="slide-reviews__content">
+												<p class="slide-reviews__desc" data-swiper-parallax="-150">
+													Я обеспечу представление Ваших интересов в судах
+													общей юрисдикции, арбитраже, третейском суде, приму
+													участие в переговорах, окажу помощь на стадии
+													досудебного урегулирования споров.
+												</p>
+												<div class="slide-reviews__info info-slide-reviews">
+													<p class="info-slide-reviews__name" data-swiper-parallax="-200">
+														Юлия Воробьева
+													</p>
+													<p class="info-slide-reviews__desc" data-swiper-parallax="-250">
+														Директор компании “Воробьева и ко”
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-reviews__pagination"></div>
+							<button type="button" class="slider-reviews__arrow slider-reviews__prev _icon-arrow"></button>
+							<button type="button" class="slider-reviews__arrow slider-reviews__next _icon-arrow"></button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="blog">
+				<div class="blog__container">
+					<div class="blog__content">
+						<div class="blog__top top-blog">
+							<div class="top-blog__left">
+								<h3 class="top-blog__subtitle subtitle subtitle_dash">
+									Наш блог
+								</h3>
+								<h2 class="top-blog__title title">
+									<span>полезно</span> знать
+								</h2>
+							</div>
+							<a href="#" class="top-blog__btn button">Читать больше</a>
+						</div>
+						<div class="blog__body">
+							<div class="blog__cards">
+								<div class="blog__card card-blog">
+									<div class="card-blog__body">
+										<div class="card-blog__img-ibg">
+											<picture><source srcset="img/blog/01.webp" type="image/webp"><img src="img/blog/01.png" alt="bg" /></picture>
+										</div>
+										<div class="card-blog__content">
+											<p class="card-blog__date">15 апреля</p>
+											<h4 class="card-blog__title">
+												Как использовать закон в свою пользу?
+											</h4>
+											<a href="#" class="card-blog__btn button">Читать</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="blog__card card-blog">
+									<div class="card-blog__body">
+										<div class="card-blog__img-ibg">
+											<picture><source srcset="img/blog/02.webp" type="image/webp"><img src="img/blog/02.png" alt="bg" /></picture>
+										</div>
+										<div class="card-blog__content">
+											<p class="card-blog__date">09 апреля</p>
+											<h4 class="card-blog__title">
+												библиотека юристов. Что почитать?
+											</h4>
+											<a href="#" class="card-blog__btn button">Читать</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="blog__card card-blog">
+									<div class="card-blog__body">
+										<div class="card-blog__img-ibg">
+											<picture><source srcset="img/blog/03.webp" type="image/webp"><img src="img/blog/03.png" alt="bg" /></picture>
+										</div>
+										<div class="card-blog__content">
+											<p class="card-blog__date">06 марта</p>
+											<h4 class="card-blog__title">
+												на что обратить внимание в документах?
+											</h4>
+											<a href="#" class="card-blog__btn button">Читать</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="blog__card card-blog">
+									<div class="card-blog__body">
+										<div class="card-blog__img-ibg">
+											<picture><source srcset="img/blog/04.webp" type="image/webp"><img src="img/blog/04.png" alt="bg" /></picture>
+										</div>
+										<div class="card-blog__content">
+											<p class="card-blog__date">23 февраля</p>
+											<h4 class="card-blog__title">
+												залог успешных дел наших юристов
+											</h4>
+											<a href="#" class="card-blog__btn button">Читать</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="news">
+				<div class="news__container">
+					<div class="news__content">
+						<div class="news__top top-news">
+							<h3 class="top-news__subtitle subtitle">Будьте в курсе</h3>
+							<h2 class="top-news__title title">
+								<span>подпишитесь</span> на наши новости
+							</h2>
+							<p class="top-news__desc">
+								Чтобы всегда быть в курсе дел и обновлении законов.
+							</p>
+						</div>
+						<div class="news__form form-news">
+							<form action="files/sendmail/sendmail.php" method="POST">
+								<input type="email" name="form[email]" data-error="Error" placeholder="Ваш e-mail" class="form-news__input input" />
+								<button type="submit" class="form-news__btn button">
+									подписаться
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="contacts">
+				<div data-da=".contacts__content, 767.98,first" class="contacts__map" id="map"></div>
+				<div class="contacts__img-ibg" data-prlx-parent>
+					<picture><source srcset="img/contacts/bg.webp" type="image/webp"><img src="img/contacts/bg.png" alt="bg" data-prlx /></picture>
+				</div>
+				<div class="contacts__dark"></div>
+				<div class="contacts__container">
+					<div class="contacts__content">
+						<div class="contacts__top top-contacts">
+							<h3 class="top-contacts__subtitle subtitle subtitle_dash">
+								На связи с нами
+							</h3>
+							<h2 class="top-contacts__title title">
+								<span>Контактная</span> информация
+							</h2>
+						</div>
+						<div class="contacts__info info-contacts">
+							<div class="info-contacts__items">
+								<div class="info-contacts__item item-info-contacts">
+									<p class="item-info-contacts__field">телефон</p>
+									<p class="item-info-contacts__value">+7 (999) 890 09 98</p>
+								</div>
+								<div class="info-contacts__item item-info-contacts">
+									<p class="item-info-contacts__field">почта</p>
+									<p class="item-info-contacts__value">info@ya.ru</p>
+								</div>
+								<div class="info-contacts__item item-info-contacts">
+									<p class="item-info-contacts__field">адрес</p>
+									<p class="item-info-contacts__value">
+										Москва, ул. Арбат, д. 1
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="contacts__form form-contacts">
+							<p class="form-contacts__title">Нужна консультация?</p>
+							<form class="form-contacts__form" action="files/sendmail/sendmail.php" method="POST">
+								<input type="tel" name="form[phone]" data-error="Error" placeholder="+7 (___) ___ __ __" class="form-contacts__input input tel-input" />
+								<button type="submit" class="form-contacts__btn button button_w" data-popup="#order-popup">
+									Заказать звонок
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__content">
+					<p class="footer__copyright">© Все права защищены 2023</p>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="js/app.min.js?_v=20231029182730"></script>
+
+</body>
+
+</html>
